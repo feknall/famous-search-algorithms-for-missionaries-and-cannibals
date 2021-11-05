@@ -4,6 +4,7 @@
 Just clone the project and run any file that you want by python. 
 
 
+## Output of Depth First
 ```
 Win! Last state: (0, 0, 'b')
 Steps: [(3, 3, 'a'), (3, 1, 'b'), (3, 2, 'a'), (3, 0, 'b'), (3, 1, 'a'), (1, 1, 'b'), (2, 2, 'a'), (0, 2, 'b'), (0, 3, 'a'), (0, 1, 'b'), (0, 2, 'a'), (0, 0, 'b')]
@@ -22,4 +23,96 @@ depth: 0, index: 0, state: (3, 3, 'a')
                                         └── ***** depth: 11, index: 0, state: (0, 0, 'b') *****
 
 Finished! Solution found? True
+```
+## Output of Breadth First
+```
+States: [(3, 3, 'a')]
+Current State: (3, 3, 'a')
+Future State: (3, 2, 'b')
+Future State: (3, 1, 'b')
+Future State: (2, 2, 'b')
+
+States: [(3, 2, 'b'), (3, 1, 'b'), (2, 2, 'b')]
+Current State: (3, 2, 'b')
+
+Current State: (3, 1, 'b')
+Future State: (3, 2, 'a')
+
+Current State: (2, 2, 'b')
+
+States: [(3, 2, 'a')]
+Current State: (3, 2, 'a')
+Future State: (3, 0, 'b')
+
+States: [(3, 0, 'b')]
+Current State: (3, 0, 'b')
+Future State: (3, 1, 'a')
+
+States: [(3, 1, 'a')]
+Current State: (3, 1, 'a')
+Future State: (1, 1, 'b')
+
+States: [(1, 1, 'b')]
+Current State: (1, 1, 'b')
+Future State: (2, 2, 'a')
+
+States: [(2, 2, 'a')]
+Current State: (2, 2, 'a')
+Future State: (0, 2, 'b')
+
+States: [(0, 2, 'b')]
+Current State: (0, 2, 'b')
+Future State: (0, 3, 'a')
+
+States: [(0, 3, 'a')]
+Current State: (0, 3, 'a')
+Future State: (0, 1, 'b')
+
+States: [(0, 1, 'b')]
+Current State: (0, 1, 'b')
+Future State: (0, 2, 'a')
+Future State: (1, 1, 'a')
+
+States: [(0, 2, 'a'), (1, 1, 'a')]
+Current State: (0, 2, 'a')
+Future State: (0, 0, 'b')
+
+Current State: (1, 1, 'a')
+
+States: [(0, 0, 'b')]
+Current State: (0, 0, 'b')
+Win! Last state: (0, 0, 'b')
+
+
+State Stack:
+(3, 3, 'a')
+(3, 2, 'b')
+(3, 1, 'b')
+(2, 2, 'b')
+(3, 2, 'a')
+(3, 0, 'b')
+(3, 1, 'a')
+(1, 1, 'b')
+(2, 2, 'a')
+(0, 2, 'b')
+(0, 3, 'a')
+(0, 1, 'b')
+(0, 2, 'a')
+(1, 1, 'a')
+(0, 0, 'b')
+
+All States:
+[(3, 3, 'a')]
+[(3, 2, 'b'), (3, 1, 'b'), (2, 2, 'b')]
+[(3, 2, 'a')]
+[(3, 0, 'b')]
+[(3, 1, 'a')]
+[(1, 1, 'b')]
+[(2, 2, 'a')]
+[(0, 2, 'b')]
+[(0, 3, 'a')]
+[(0, 1, 'b')]
+[(0, 2, 'a'), (1, 1, 'a')]
+[(0, 0, 'b')]
+Finished!
 ```
