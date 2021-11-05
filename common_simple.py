@@ -1,4 +1,3 @@
-
 def is_win(game_state):
     return game_state[0] == game_state[1] == 0
 
@@ -56,7 +55,3 @@ def find_best_frontier(frontier_states, side, compute_fn):
             min_value = fn
             min_state = state
     return min_state, min_value
-
-
-if __name__ == "__main__":
-    print(get_boat_at_a_new_states((2, 2, 1, 0, 0, 1, 'a')))
