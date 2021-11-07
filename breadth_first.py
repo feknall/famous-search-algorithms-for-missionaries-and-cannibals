@@ -1,4 +1,4 @@
-from common_simple import *
+from common import *
 
 
 def get_future_states(game_state):

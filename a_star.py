@@ -1,4 +1,4 @@
-from common_simple import *
+from common import *
 
 states_gn = dict()
 win = False

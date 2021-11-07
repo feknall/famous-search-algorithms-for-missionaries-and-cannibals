@@ -1,4 +1,4 @@
-from common_simple import *
+from common import *
 from treelib import Tree
 
 depth = 13

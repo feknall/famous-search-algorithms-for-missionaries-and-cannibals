@@ -1,4 +1,4 @@
-from common_simple import *
+from common import *
 
 depth = 150
 win = False
